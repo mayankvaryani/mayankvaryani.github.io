@@ -1,10 +1,7 @@
 <html>
   <head>OTP detect</head>
   <body>
-    <form>
-        <input autocomplete="one-time-code" required/>
-        <input type="submit">
-    </form>
+    
     <script>
       if ('OTPCredential' in window) {
   window.addEventListener('DOMContentLoaded', e => {
@@ -29,6 +26,11 @@
   });
 }
     </script>
+    <form>
+        <input autocomplete="one-time-code" required/>
+        <input type="submit">
+    </form>
+    
    </body></html>
     
       
