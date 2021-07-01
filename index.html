@@ -1,7 +1,12 @@
-
-<input type="text" autocomplete="one-time-code" inputmode="numeric" />
-<script>
-if ('OTPCredential' in window) {
+<html>
+  <head>OTP detect</head>
+  <body>
+    <form>
+        <input autocomplete="one-time-code" required/>
+        <input type="submit">
+    </form>
+    <script>
+      if ('OTPCredential' in window) {
   window.addEventListener('DOMContentLoaded', e => {
     const input = document.querySelector('input[autocomplete="one-time-code"]');
     if (!input) return;
@@ -23,4 +28,7 @@ if ('OTPCredential' in window) {
     });
   });
 }
-</script>
+    </script>
+   </body></html>
+    
+      
