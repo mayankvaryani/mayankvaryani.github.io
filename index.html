@@ -1,10 +1,5 @@
-<form action="/verify-otp" method="POST">
-  <input type="text"
-         inputmode="numeric"
-         autocomplete="one-time-code"
-         pattern="\d{6}"
-         required>
-</form>
+
+  <input type="text" autocomplete="one-time-code">
 <script>
   if ('OTPCredential' in window) {
   window.addEventListener('DOMContentLoaded', e => {
